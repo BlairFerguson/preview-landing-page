@@ -59,7 +59,7 @@ body {
 .cta {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: #4a3aff;
+  background: #9d63dd;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -68,11 +68,11 @@ body {
 }
 
 .cta:hover {
-  background: #3a2ed8;
+  background: #7d4dc5;
 }
 
 .content-section {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 12px;
@@ -83,7 +83,7 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #1b3a4b;
+  color: #9d63dd;
 }
 
 .content-section p {
@@ -100,7 +100,7 @@ footer {
   color: white;
 }
 
-/* Typing animation layout fix */
+/* Typing animation section */
 .typed-wrapper {
   display: inline-block;
   min-width: 240px;
@@ -110,11 +110,12 @@ footer {
 
 .typed-text {
   white-space: nowrap;
+  color: #00a8cc;
 }
 
 .cursor {
   display: inline-block;
-  color: #4a3aff;
+  color: #00a8cc;
   font-weight: bold;
   animation: blink 0.7s infinite;
 }
