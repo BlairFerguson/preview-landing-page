@@ -95,3 +95,16 @@ footer {
   background: #1b3a4b;
   color: white;
 }
+
+.cursor {
+  display: inline-block;
+  color: #4a3aff;
+  font-weight: bold;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

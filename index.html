@@ -14,7 +14,9 @@
   <main class="main-wrapper">
     <section class="hero">
       <img src="assets/logo.png" alt="Preview Diagnostics Logo" class="logo" />
-      <h1>Diagnosis of Chronic Conditions,<br>in the Blink of AI</h1>
+      <h1>
+        Diagnosis of <span class="typed-text"></span><span class="cursor">|</span> from retinal scans
+      </h1>
       <p class="tagline">
         We're building revolutionary retinal scan technology to detect chronic diseases before symptoms appear.
       </p>
@@ -25,9 +27,9 @@
       <h2>What is Preview?</h2>
       <p>
         Preview Diagnostics is a Singapore-based healthtech company leveraging AI and retinal imaging to diagnose
-        systemic, chronic conditions early - up to months or years before symptoms present. Our proprietary deep learning model
+        systemic, chronic conditions early — often before symptoms even arise. Our proprietary deep learning model
         integrates directly into existing clinical workflows, helping clinicians detect disease earlier without
-        extra training or changes to clinical workflows.
+        extra training or equipment.
       </p>
     </section>
 
@@ -36,7 +38,7 @@
       <p>
         Chronic disease is the leading cause of death globally, yet prevention is vastly underfunded. Preview is
         changing that by turning routine eye scans into powerful early detection tools. Earlier diagnosis means
-        better outcomes, lower costs, and peace of mind - for patients, providers, insurers, and researchers alike.
+        better outcomes, lower costs, and peace of mind — for patients, providers, insurers, and researchers alike.
       </p>
     </section>
   </main>
@@ -44,5 +46,48 @@
   <footer>
     <p><strong>Preview Diagnostics Pte. Ltd.</strong><br>160 ROBINSON ROAD, #20-03, SINGAPORE 068914</p>
   </footer>
+
+  <script>
+    const diseases = [
+      "Cardiovascular disease",
+      "Stroke",
+      "Hypertension",
+      "Parkinson’s Disease",
+      "Alzheimer’s Disease",
+      "Chronic Kidney Disease",
+      "Multiple Sclerosis"
+    ];
+
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+
+    let diseaseIndex = 0;
+    let charIndex = 0;
+    let typingDelay = 80;
+    let erasingDelay = 60;
+    let newTextDelay = 1500;
+    let isDeleting = false;
+
+    function type() {
+      const current = diseases[diseaseIndex];
+      if (!isDeleting && charIndex <= current.length) {
+        typedTextSpan.textContent = current.substring(0, charIndex++);
+        setTimeout(type, typingDelay);
+      } else if (isDeleting && charIndex >= 0) {
+        typedTextSpan.textContent = current.substring(0, charIndex--);
+        setTimeout(type, erasingDelay);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+          diseaseIndex = (diseaseIndex + 1) % diseases.length;
+        }
+        setTimeout(type, newTextDelay);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      if (diseases.length) setTimeout(type, newTextDelay);
+    });
+  </script>
 </body>
 </html>
