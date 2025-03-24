@@ -100,7 +100,7 @@ footer {
 
 .footer-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
@@ -115,13 +115,8 @@ footer {
 }
 
 .footer-left img {
-  width: 60px;
+  width: 70px;
   height: auto;
-}
-
-.footer-brand {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-company {
@@ -148,10 +143,9 @@ footer {
 .footer-info svg.footer-icon {
   flex-shrink: 0;
   margin-top: 4px;
+  width: 16px;
+  height: 16px;
 }
-
-
-
 
 
 /* Typing animation section */
