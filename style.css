@@ -100,18 +100,23 @@ footer {
   color: white;
 }
 
+/* Typing animation layout fix */
+.typed-wrapper {
+  display: inline-block;
+  min-width: 240px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.typed-text {
+  white-space: nowrap;
+}
+
 .cursor {
   display: inline-block;
   color: #4a3aff;
   font-weight: bold;
   animation: blink 0.7s infinite;
-}
-
-.typed-text {
-  display: inline-block;
-  min-width: 240px; /* Prevent shifting on longer disease names */
-  white-space: nowrap;
-  text-align: left;
 }
 
 @keyframes blink {
