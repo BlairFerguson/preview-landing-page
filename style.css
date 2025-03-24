@@ -108,9 +108,23 @@ footer {
   margin: 0 auto;
 }
 
-.footer-logo img {
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-left img {
   width: 120px;
   height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.footer-company {
+  font-size: 0.95rem;
+  margin: 0;
+  color: white;
+  font-weight: 600;
 }
 
 .footer-info {
@@ -118,8 +132,15 @@ footer {
   line-height: 1.6;
   text-align: right;
   color: white;
-  white-space: pre-line;
 }
+
+.footer-info p {
+  margin: 0 0 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 
 
 /* Typing animation section */
