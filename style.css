@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #f5f8fb;
-  color: #1a1a1a;
+  color: #1b3a4b;
 }
 
 .background {
@@ -42,11 +42,12 @@ body {
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #1b3a4b;
 }
 
 .tagline {
   font-size: 1.125rem;
-  color: #444;
+  color: #1b3a4b;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -78,18 +79,19 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
+  color: #1b3a4b;
 }
 
 .content-section p {
   font-size: 1rem;
   line-height: 1.7;
-  color: #333;
+  color: #1b3a4b;
 }
 
 footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  background: #f0f3f8;
-  color: #555;
+  background: #1b3a4b;
+  color: white;
 }
