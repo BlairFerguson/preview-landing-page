@@ -38,7 +38,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-
 .hero h1 {
   font-size: 2.25rem;
   font-weight: 700;
@@ -173,4 +172,9 @@ footer {
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.ai-highlight {
+  color: #00a8cc;
+  font-weight: 600;
 }
