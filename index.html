@@ -1,141 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preview Diagnostics</title>
-
-    <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/favicon.svg" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  
-    <!-- Iubenda Cookie Solution -->
-    <script type="text/javascript">
-      var _iub = _iub || [];
-      _iub.csConfiguration = {
-        "siteId": 3977946,
-        "cookiePolicyId": 36957711,
-        "lang": "en",
-        "storage": { "useSiteId": true }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00a7cc",
+              accent: "#9D63DD",
+              "background-light": "#f8f9fa",
+              "background-dark": "#0f1f23",
+              "text-main": "#1B3A4B",
+              "text-main-dark": "#e0e6e8",
+              "text-secondary": "#5c707b",
+              "text-secondary-dark": "#a0b0b6",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              sans: ["Space Grotesk", "sans-serif"],
+            },
+            animation: {
+              "fade-in": "fadeIn 0.5s ease-out",
+              "slide-up": "slideUp 0.5s ease-out",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+          },
+        },
       };
     </script>
-    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3977946.js"></script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-    <!-- Google tag (gtag.js) - placed AFTER Iubenda autoblocking -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHE974JLDV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LHE974JLDV');
-</script>
-  </head>
-  
-<body>
-  <div class="background">
-    <img src="assets/background.svg" alt="Background" class="bg-svg">
-  </div>
-
-  <main class="main-wrapper">
-    <section class="hero">
-      <img src="assets/logo.png" alt="Preview Diagnostics Logo" class="logo" />
-      <h1>
-        Diagnosis of <span class="typed-wrapper"><span class="typed-text"></span><span class="cursor">|</span></span> from retinal scans, in the blink of <span class="ai-highlight">AI</span>
-      </h1>      
-      <p class="tagline">
-        Our proprietary machine learning models detect systemic, chronic diseases from non-invasive retinal scans, even before symptoms appear. 
-        <br><span class="highlight"> Earlier diagnosis, better outcomes, with no extra work, and no extra scans. </span>
-      </p>
-    </section>
-
-    <section class="content-section">
-      <h2>What is Preview?</h2>
-      <p>
-        Preview Diagnostics is a Singapore-based healthtech company building AI and retinal imaging to <span class="highlight">diagnose
-        systemic, chronic conditions </span> early, up to months or years before symptoms even arise. Our proprietary deep learning model
-        <span class="highlight">integrates directly into existing clinical workflows</span>, helping clinicians detect disease earlier without
-        extra training or equipment.
-      </p>
-    </section>
-
-    <section class="content-section">
-      <h2>Why Preview?</h2>
-      <p>
-        Chronic disease is the <span class="highlight">leading cause of death globally</span>, yet prevention is vastly underfunded. Preview is
-        changing that by turning routine eye scans into powerful early detection tools. Earlier diagnosis means
-        better outcomes, lower costs, and peace of mind for patients, providers, insurers, and researchers alike.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-left">
-        <img src="assets/logo-inverted.png" alt="Preview Diagnostics Logo" />
-        <p class="footer-company">Preview Diagnostics Pte. Ltd.</p>
-      </div>
-      <div class="footer-info">
-        <p>
-          <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-            <path fill="#00a8cc" d="M168 0C75.1 0 0 75.1 0 168c0 87.9 141.9 301.4 154.7 319.7 6 8.8 19.7 8.8 25.7 0C210.1 469.4 352 255.9 352 168 352 75.1 276.9 0 184 0zM168 240c-39.8 0-72-32.2-72-72s32.2-72 72-72 72 32.2 72 72-32.2 72-72 72z"/>
-          </svg>
-          <span>160 Robinson Road, #20-03<br>Singapore 068914</span>
-        </p>
-        <p>
-          <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path fill="#00a8cc" d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v0.01L12 13 2 4.01V4zm0 2.2V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6.2L12 15.2 2 6.2z"/>
-          </svg>
-          <span>info@preview-diagnostics.com</span>
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const diseases = [
-      "Cardiovascular disease",
-      "Stroke",
-      "Hypertension",
-      "Parkinson’s Disease",
-      "Alzheimer’s Disease",
-      "Chronic Kidney Disease",
-      "Multiple Sclerosis"
-    ];
-
-    const typedTextSpan = document.querySelector(".typed-text");
-    const cursorSpan = document.querySelector(".cursor");
-
-    let diseaseIndex = 0;
-    let charIndex = 0;
-    let typingDelay = 50;
-    let erasingDelay = 30;
-    let newTextDelay = 1000;
-    let isDeleting = false;
-
-    function type() {
-      const current = diseases[diseaseIndex];
-      if (!isDeleting && charIndex <= current.length) {
-        typedTextSpan.textContent = current.substring(0, charIndex++);
-        setTimeout(type, typingDelay);
-      } else if (isDeleting && charIndex >= 0) {
-        typedTextSpan.textContent = current.substring(0, charIndex--);
-        setTimeout(type, erasingDelay);
-      } else {
-        isDeleting = !isDeleting;
-        if (!isDeleting) {
-          diseaseIndex = (diseaseIndex + 1) % diseases.length;
-        }
-        setTimeout(type, newTextDelay);
+    <style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
       }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-      if (diseases.length) setTimeout(type, newTextDelay);
-    });
-  </script>
+      /* Custom scrollbar for chat */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background-light text-text-main antialiased selection:bg-primary selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
