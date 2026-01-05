@@ -15,12 +15,16 @@ export const OpenApplication: React.FC = () => {
             We are always on the lookout for talented people who are energised by the future of surgical intelligence to join our
             team.
           </span>
+          We are always on the lookout for talented people who are energised by the future of surgical intelligence to join our
+          team.
           <span className="block">
             We encourage engineers, clinicians, investors, and researchers who want to make surgical complications obsolete.
           </span>
           <span className="block">
             If our vision resonates with you, share your background and ambitions so we can explore building together.
           </span>
+          We encourage engineers, clinicians, investors, and researchers who want to make surgical complications obsolete.
+          If our vision resonates with you, share your background and ambitions so we can explore building together.
         </p>
         <div className="flex justify-center">
           <a
