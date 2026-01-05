@@ -11,8 +11,8 @@ export const OpenApplication: React.FC = () => {
           Join the movement shaping surgery&apos;s new frontier
         </h2>
         <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/80">
-          We are looking for people who are energised by the future of surgical intelligence—engineers,
-          clinicians, operators, and storytellers who want to accelerate better outcomes for patients.
+          We are always on the lookout for talented people who are energised by the future of surgical intelligence to join our team. 
+          We encourage engineers, clinicians, investors, and researchers who want to make surgical complications obsolete.
           If our vision resonates with you, share your background and ambitions so we can explore building
           together.
         </p>
