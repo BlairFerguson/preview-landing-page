@@ -11,6 +11,7 @@ export const OpenApplication: React.FC = () => {
           Join the movement shaping surgery&apos;s new frontier
         </h2>
         <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/80">
+          We are always on the lookout for talented people who are energised by the future of surgical intelligence to join our team.
           <span className="block">
             We are always on the lookout for talented people who are energised by the future of surgical intelligence to join our
             team.
