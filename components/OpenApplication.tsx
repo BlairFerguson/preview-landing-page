@@ -21,7 +21,7 @@ export const OpenApplication: React.FC = () => {
             href="mailto:people@preview-diagnostics.com?subject=Open%20application%20-%20Preview%20Diagnostics"
             className="mt-2 flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-8 py-3 text-base font-bold text-white transition-all hover:scale-105 hover:bg-primary/90 active:scale-95 shadow-lg shadow-primary/20"
           >
-            Send your story
+            Contact our team
           </a>
         </div>
       </div>
