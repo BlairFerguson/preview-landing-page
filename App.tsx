@@ -4,10 +4,12 @@ import { Hero } from './components/Hero';
 import { FeatureSection } from './components/FeatureSection';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
+import { AnalyticsConsent } from './components/AnalyticsConsent';
 
 function App() {
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden bg-background-dark font-display text-white selection:bg-primary/30">
+      <AnalyticsConsent />
       <div className="flex h-full grow flex-col">
         <Header />
         
