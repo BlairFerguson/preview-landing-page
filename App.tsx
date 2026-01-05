@@ -5,6 +5,7 @@ import { FeatureSection } from './components/FeatureSection';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
 import { AnalyticsConsent } from './components/AnalyticsConsent';
+import { OpenApplication } from './components/OpenApplication';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             imageAlt="Abstract vibrant light patterns in shades of cyan and purple overlaying a medical scan of a human brain"
           />
 
+          <OpenApplication />
           <CTA />
         </main>
 
