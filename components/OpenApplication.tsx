@@ -19,6 +19,8 @@ export const OpenApplication: React.FC = () => {
           <span className="block">
             If our vision resonates with you, share your background and ambitions so we can explore building together.
           </span>
+          We encourage engineers, clinicians, investors, and researchers who want to make surgical complications obsolete.
+          If our vision resonates with you, share your background and ambitions so we can explore building together.
         </p>
         <div className="flex justify-center">
           <a
