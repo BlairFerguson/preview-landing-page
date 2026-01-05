@@ -11,11 +11,6 @@ export const OpenApplication: React.FC = () => {
           Join the movement shaping surgery&apos;s new frontier
         </h2>
         <p className="mx-auto max-w-3xl text-lg leading-relaxed text-white/80">
-          We are always on the lookout for talented people who are energised by the future of surgical intelligence to join our team.
-          <span className="block">
-            We are always on the lookout for talented people who are energised by the future of surgical intelligence to join our
-            team.
-          </span>
           We are always on the lookout for talented people who are energised by the future of surgical intelligence to join our
           team.
           <span className="block">
@@ -24,8 +19,6 @@ export const OpenApplication: React.FC = () => {
           <span className="block">
             If our vision resonates with you, share your background and ambitions so we can explore building together.
           </span>
-          We encourage engineers, clinicians, investors, and researchers who want to make surgical complications obsolete.
-          If our vision resonates with you, share your background and ambitions so we can explore building together.
         </p>
         <div className="flex justify-center">
           <a
